@@ -1,0 +1,3 @@
+input:enabled  { /* ... */ } /* when enabled */
+input:disabled { /* ... */ } /* when disabled */
+input:checked  { /* ... */ } /* when checked (for type='checkbox') */

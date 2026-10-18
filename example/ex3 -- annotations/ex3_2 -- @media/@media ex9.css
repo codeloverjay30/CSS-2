@@ -1,0 +1,8 @@
+/* when has no preference color scheme */
+@media (prefers-color-scheme: no-preference) { /* ... */ }
+
+/* when has preference color scheme -- light scheme */
+@media (prefers-color-scheme: light)         { /* ... */ }
+
+/* when has preference color scheme -- dark scheme */
+@media (prefers-color-scheme: dark)          { /* ... */ }

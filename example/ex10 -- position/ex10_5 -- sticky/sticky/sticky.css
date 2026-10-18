@@ -1,0 +1,9 @@
+.container {
+    position: relative;
+
+    .sticky-item {
+        position: sticky;
+        top: 50px;
+        left: 100px;
+    }
+}

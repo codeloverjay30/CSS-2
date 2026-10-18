@@ -1,0 +1,10 @@
+:root{
+    --color-primary-rgb: 46, 65, 140;
+}
+p{
+    color: rgb(var(--color-primary-rgb));
+}
+p.text-sub{
+    /* `--color-primary-rgb` with 0.50 alpha */
+    color: rgba(var(--color-primary-rgb), .5)
+}

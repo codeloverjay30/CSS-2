@@ -1,0 +1,35 @@
+div {
+    padding: 70px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow:
+	    0 0 0 15px #F59C82 inset,
+	    0 0 0 30px #FDB9FD inset,
+	    0 0 0 45px #AAE7FE inset,
+	    0 0 0 60px #C3FEB3 inset,
+	    0 0 0 75px #FEF6A0 inset;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #91cdff 0%, #fff 50%);
+  	&:after {
+	    	position: absolute;
+	    	content: "";
+	    	display: block;
+		    bottom: 0;
+		    left: 0;
+		    height: 50%;
+		    width: 100%;
+		    background: linear-gradient(to bottom, #0070C0 0, #1A45A0 100%);
+    }
+}

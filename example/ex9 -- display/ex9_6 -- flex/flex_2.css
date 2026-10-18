@@ -1,0 +1,66 @@
+.container{
+    /* 
+        single value.
+        `flex-grow`  
+        When it's a scalar, it will set `flex-grow` field and `flex-basis` fields is set to `0` 
+    */
+    flex: 2;
+}
+
+.container{
+    /* 
+        single value. 
+        `flex-basis` 
+        When it's a scalar followed by size unit, it will set `flex-basis` field 
+    */
+    flex: 10em;
+}
+
+.container{
+    /* 
+        single value. 
+        `flex-basis` 
+        When it's a scalar followed by size unit, it will set `flex-basis` field 
+    */
+    flex: 30px;
+}
+
+.container{
+    /* 
+        single value.
+        `flex-basis` 
+        When it is for setting height and width, it will set `flex-basis` field.
+    */
+    flex: min-content;
+}
+
+.container{
+    /* 
+        two value.
+        `flex-grow` | `flex-basis` 
+        When first value is a scalar, it will set `flex-grow` field. 
+        When second value is a scalar followed by size unit, it will set `flex-basis` field 
+    */
+    flex: 1 30px;
+}
+
+.container{
+    /* 
+        two value. 
+        `flex-grow` | `flex-shrink`
+        When first value is a scalar, it will set `flex-grow` field. 
+        When second value is a scalar, it will set `flex-shrink` field 
+    */
+    flex: 2 2;
+}
+
+.container{
+    /* 
+        three value. 
+        `flex-grow` | `flex-shrink` | `flex-basis`
+        For first value, it will always set `flex-grow` field. 
+        For first value, it will always set `flex-shrink` field. 
+        For first value, it will always set `flex-basis` field. 
+    */
+    flex: 2 2 0.1;
+}

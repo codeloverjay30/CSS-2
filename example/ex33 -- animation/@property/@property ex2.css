@@ -1,0 +1,29 @@
+:root{
+    --main-color: #73a4df;
+    --bg-color: #eee;
+}
+
+@property --percentage {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0turn;
+}
+
+@keyframes animate-percentage {
+    from {
+        --percentage: 0turn;
+    }
+    to {
+        --percentage: 0.8turn;
+    }
+}
+
+div{
+    background: 
+        conic-gradient(from 0turn at center,
+                       var(--main-color) var(--percentage), var(--bg-color) 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: animate-percentage 3s 1 ease-in-out forwards;
+}

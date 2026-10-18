@@ -1,0 +1,13 @@
+.card {
+    /* top bottom, left right */
+    margin: 16px;
+
+    /* top bottom, left right */
+    margin: 12px 16px;
+
+    /* top, left right, bottom */
+    margin: 12px 16px 12px;
+
+    /* top, right, bottom, left */
+    margin: 12px 16px 12px 16px;
+}

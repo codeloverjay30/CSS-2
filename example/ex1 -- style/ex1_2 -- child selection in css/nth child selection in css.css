@@ -1,0 +1,21 @@
+/** 
+    only filter from children in same level between the node of li tag and the root node in node tree. 
+*/
+li:first-child         { /* ... */ } /* first child */
+li:last-child           { /* ... */ } /* last child */
+li:nth-child(3)         { /* ... */ } /* third child */
+li:nth-last-child(2)    { /* ... */ } /* last two child */
+li:nth-child(odd)       { /* ... */ } /* odd children */
+li:nth-child(even)      { /* ... */ } /* even children */
+li:nth-child(n+4)       { /* ... */ } /* all children except the first three */
+li:nth-child(3n)        { /* ... */ } /* all children whose index are three times. Such as 0th child, 3th child, 6th child, and so on. */
+li:nth-child(3n-1)      { /* ... */ } /* all children whose index are three times minus 1. Such as 2th child, 5th child, 8th child, and so on. */
+
+/** only filter from children 
+    + in same level between the node of li tag and the root node in node tree.
+    + the node has same type (here are nodes with lli tag). 
+*/
+li:first-of-type         { /* ... */ } /* first child */
+li:last-of-type          { /* ... */ } /* last child */
+li:nth-of-type(3)        { /* ... */ } /* third child */
+li:nth-last-of-type(2)   { /* ... */ } /* last two child */

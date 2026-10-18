@@ -1,0 +1,2 @@
+a:not(:last-child) { /* ... */ }      /* select all nodes with `a` tag except the last one with `a` tag */
+a:empty            { display: none; } /* select all nodes with `a` tag whose display is none (will not be display on web page). */

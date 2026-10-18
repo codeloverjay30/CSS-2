@@ -1,0 +1,9 @@
+body{
+    background-color: #f9f2ec;
+    background-image:
+        radial-gradient(#E6CDA9 15%, transparent 0),
+        radial-gradient(#DA8674 15%, transparent 0),
+        radial-gradient(#B1D3D1 15%, transparent 0);
+    background-size: 60px 60px;
+    background-position: 0 0, 20px 20px, 40px 40px;
+}

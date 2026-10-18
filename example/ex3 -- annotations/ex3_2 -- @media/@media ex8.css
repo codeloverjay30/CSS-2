@@ -1,0 +1,8 @@
+/* When the device is screen AND it does NOT support pointer behavior (simply to say, it can't perform click with pointer (throguh mouse or finger) */
+@media screen and (pointer: none) { /* ... */ }
+
+/* When the device is screen AND it does support pointer behavior precisely (simply to say, it can perform click with pointer (throguh mouse or finger) precisely*/
+@media screen and (pointer: fine) { /* ... */ }
+
+/* When the device is screen AND it does support pointer behavior but NOT precise (simply to say, it can perform click with pointer (throguh mouse or finger) but NOT precise*/
+@media screen and (pointer: coarse) { /* ... */ }

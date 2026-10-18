@@ -1,0 +1,10 @@
+/**
+    aside is translated to `側邊欄` in Chinese.
+    It behaves like navigation rail in mobile App. 
+    If you are familiar with material 3 components in Android Jetpack Compose, you may know it.
+*/
+@media print {
+    aside {
+        display: none;
+    }
+}

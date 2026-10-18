@@ -1,0 +1,9 @@
+p::before { content: "把東西加在前面"; } /* insert `把東西加在前面` before the original innerText for all nodes with p tag */
+
+/* it can be used when it is a modifier element.*/
+p::before { 
+    content: "";    /* content field is required. If you don't want to add content, just set it to empty string */
+    display: block; /* display field is also required.*/
+    /* other customize styles with fields */
+    /* ... */
+}

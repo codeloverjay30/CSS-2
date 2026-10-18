@@ -1,0 +1,1 @@
+p::after  { content: "把東西加在後面"; } /* append `把東西加在後面` after the original innerText for all nodes with p tag */

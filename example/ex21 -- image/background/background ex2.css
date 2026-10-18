@@ -1,0 +1,18 @@
+avatar-frame{
+    width: 200px;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+
+	background: 
+				#eee  						/* background-color */
+				url("images/avatar.jpg")	 /* background-image */
+				scroll						 /* background-attachment */
+				repeat						 /* background-repeat */
+				center						 /* background-position */
+				/ 
+				cover 						 /* background-size */
+
+	/* it is required when printting */
+	print-color-adjust: exact;
+    -webkit-print-color-adjust: exact; /* for Chrome, Edge, Opera */
+}

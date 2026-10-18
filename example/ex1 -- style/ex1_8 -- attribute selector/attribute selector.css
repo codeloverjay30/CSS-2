@@ -1,0 +1,10 @@
+/**
+If you are familiar with RE (Regular expression), you may be able to quickly guess what it means the first time you see it.
+*/
+
+a[disabled]          { /*...*/ } /* all nodes with `a` tag who has `disabled` attribute (e.g. <a href="https://github.com/40843245" disabled> */
+a[target="_blank"]    { /*...*/ } /* all nodes with `a` tag whose value of `target` attribute is set to `_blank`. */
+a[href~="instagram"]  { /*...*/ } /* 選取連結文字有包含 "instagram" 的 a */
+a[href^="https" i]    { /*...*/ } /* all nodes with `a` tag whose value of `href` attribute starts with `https`, case-insensitive (i.e. ignore case of letters) */
+a[href$="docx" i]     { /*...*/ } /* all nodes with `a` tag whose value of `href` attribute ends with `https`, case-insensitive (i.e. ignore case of letters)*/
+img[alt*="cats"]      { /*...*/ } /* all nodes with `img` tag and whose value of `alt` attribute contains the word `cats`.

@@ -1,0 +1,6 @@
+.tri {
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid #328fa8;
+    border-right: 50px solid transparent;
+ }

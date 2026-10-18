@@ -1,0 +1,16 @@
+.avatar-object-fit{
+    width: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+/* 	line-height: 0; */
+	> img{
+	/* 	HTML <img> 預設為 inline, 
+		它的 line-height 會造成與父容器高度略有不同,
+		可以將父層 line-height 設為 0, 
+		或是將 <img> 預設為 block */
+		display: block;
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+	}
+}

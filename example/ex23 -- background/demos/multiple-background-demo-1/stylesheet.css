@@ -1,0 +1,64 @@
+.container{
+    background: 
+        url(https://im1010ioio.github.io/super-easy-css/38/bg-1.png) no-repeat 0 50%,
+        url(https://im1010ioio.github.io/super-easy-css/38/bg-2.png) no-repeat 100% 60%,
+        radial-gradient(circle, rgba(109,250,242,1) 0%, rgba(104,133,244,1) 100%);
+    background-size: 25%, 22%, 100%;
+}
+
+/* other style */
+*{ box-sizing: border-box; }
+
+body{
+	background: #f5f5f5;
+}
+
+h1{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 12px 2px #5F5FFF;
+    margin-bottom: 1rem;
+}
+
+p{
+    width: 50%;
+    margin: auto;
+    color: #4040aa;
+    padding: 0 1rem;
+    line-height: 150%;
+}
+
+.resize{
+	position: relative;
+	resize: horizontal;
+	overflow: auto;
+	width: 90vw;
+	min-width: 100px;
+	margin: auto;
+	margin-top: 5rem;
+	padding: 5rem 0;
+	&:before, &:after{
+		position: absolute;
+	}
+	&:before{
+		content: "拉拉我👇";
+		right: .5rem;
+		bottom: 1rem;
+		color: #fff;
+	}
+	&:after{
+		content: "";
+		right: 0;
+		bottom: 0;
+		display: block;
+		border: 1rem solid;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #ff09;
+		border-bottom-color: #ff09;
+	}
+}

@@ -1,0 +1,16 @@
+.container {
+    container-type: inline-size;
+    container-name: toolbar;
+    width: 30vw;
+    .toolbar {
+        display: flex;
+    }
+}
+
+/* 當名為「toolbar」的容器小於 150px， .toolbar 改為直式排列 */
+@container toolbar (width < 150px) {
+    .toolbar {
+        flex-direction: column;
+        width: 200px;
+    }
+}

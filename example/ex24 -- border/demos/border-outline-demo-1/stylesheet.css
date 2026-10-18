@@ -1,0 +1,32 @@
+input[type="text"] {
+    padding: .5em 1em;
+    border-radius: .5em;
+    border: 2px solid #ccc;
+	  outline-color: transparent;
+	  transition: .5s;
+    &:focus{
+    	  border-color: #ccc;
+			  outline: .25em solid #d5e3ee;
+    }
+}
+
+div {
+    padding: 0.6em 2em;
+    font-size: 1em;
+    color: white;
+    border-radius: 0.7em;
+    background: #010440;
+	  border: 0.5em solid #4E84A6;
+    outline: 0.5em solid #a2dfc6;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+	  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+		gap: 4rem;
+}

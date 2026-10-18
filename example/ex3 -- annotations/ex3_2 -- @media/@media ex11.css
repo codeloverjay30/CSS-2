@@ -1,0 +1,11 @@
+.img-set{
+    @media screen and (max-resolution: 3x) {
+        background-image: url("3x圖檔連結");
+    }
+    @media screen and (max-resolution: 2x) {
+        background-image: url("2x圖檔連結");
+    }
+    @media screen and (max-resolution: 3x) {
+        background-image: url("3x圖檔連結");
+    }
+}

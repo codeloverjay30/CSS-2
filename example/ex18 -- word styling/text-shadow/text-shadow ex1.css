@@ -1,0 +1,6 @@
+/** 
+    text-shadow: y offset | x offset | degreee of blur | shadowed color 
+*/
+h1 {
+    text-shadow: 1px 1px 3px black;
+}

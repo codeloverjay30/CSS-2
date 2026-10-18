@@ -1,0 +1,9 @@
+body{
+    /*     background: linear-gradient(#e16e5c 0%, #e16e5c 40%, #f6e3cd 40%); */
+    /*     background: linear-gradient(#e16e5c 40%, #f6e3cd 0); */
+        background: linear-gradient(
+            #e16e5c 33.33%,
+            #edb71e 0 66.66%,
+            #f6e3cd 0);
+        background-size: 100% 30px;
+    }

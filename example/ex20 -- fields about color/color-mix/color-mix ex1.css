@@ -1,0 +1,4 @@
+:root{
+	--primary: #647AF1;
+	--primary-light-50: color-mix(in srgb, var(--primary) 50%, white);
+}

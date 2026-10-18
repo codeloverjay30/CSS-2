@@ -1,0 +1,5 @@
+.flex-container {
+    /* single value: top bottom left right */
+    /* two value: row-gap: top bottom | column-gap: left: right ; */
+    column-gap: 1rem;
+}

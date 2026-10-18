@@ -1,0 +1,5 @@
+.petal {
+    width: 100px;
+    height: 100px;
+    border-radius: 0 50% 50% 50%;
+}

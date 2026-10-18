@@ -1,0 +1,6 @@
+header {
+    background-color: #ffa;
+    /* Add this line when print background color or background icon */ 
+	-webkit-print-color-adjust: exact; /* for Chrome, Edge, Opera */
+    print-color-adjust: exact;  /* for other webbrowser
+}

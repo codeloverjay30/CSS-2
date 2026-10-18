@@ -1,0 +1,7 @@
+div{
+    background: repeating-linear-gradient(60deg, 
+                #fdfbc3 0 15px,
+                #a8ddbf 0 30px);
+    width: 100vw;
+    height: 100vh;
+}

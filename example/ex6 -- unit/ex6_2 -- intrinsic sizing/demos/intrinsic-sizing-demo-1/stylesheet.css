@@ -1,0 +1,46 @@
+.text-fit { width: fit-content; }
+.text-min { width: min-content; }
+.text-max { width: max-content; }
+
+*{ box-sizing: border-box; }
+
+h1{
+	border-bottom: 8px solid #ccc;
+	padding: 0 1rem;
+	margin: auto;
+}
+
+.text{
+	border: 5px dotted #fbb;
+}
+
+.resize{
+	position: relative;
+	resize: both;
+	overflow: auto;
+	width: 500px;
+	margin: auto;
+	padding: 1rem;
+	padding-bottom: 5rem;
+	border: 3px solid #ccc;
+	&:before, &:after{
+		position: absolute;
+	}
+	&:before{
+		content: "拉拉我👇";
+		right: .5rem;
+		bottom: 1rem;
+		color: #aaa;
+	}
+	&:after{
+		content: "";
+		right: 0;
+		bottom: 0;
+		display: block;
+		border: 1rem solid;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #ff09;
+		border-bottom-color: #ff09;
+	}
+}

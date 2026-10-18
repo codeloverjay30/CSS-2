@@ -1,0 +1,17 @@
+/* affects when selection for all elements. */
+*::selection {
+    color: gold;
+    background-color: red;
+}
+
+/* affects when selection for all elements. */
+::selection {
+    color: gold;
+    background-color: red;
+}
+  
+/* affects when selection for elements with p tags. */
+p::selection {
+    color: white;
+    background-color: blue;
+}

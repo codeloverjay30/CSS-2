@@ -1,0 +1,4 @@
+p::first-letter { /* ... */ } /* first letter of innerText for all node with p tag. */
+p::first-line   { /* ... */ } /* first line of innerText for all nodes with p tag */
+p::selection   { /* ... */ } /* all nodes with p tag with selection */
+*:lang(en-US)  { /* ... */ } /* all nodes that is in en-US language. */

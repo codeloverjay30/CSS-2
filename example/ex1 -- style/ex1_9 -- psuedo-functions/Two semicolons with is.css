@@ -1,0 +1,9 @@
+/** 
+    all nodes with `a` tag that satisfy these requirements.
+    + is in hover. (clue at `a:hover`)
+    + is inside either `header`, `main`, `footer` tag.
+
+    equivalent to 
+    `header a:hover, main:hover, footer:hover { ... } `
+*/
+:is(header, main, footer) a:hover { /* ... */} 

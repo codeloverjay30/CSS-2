@@ -1,0 +1,9 @@
+.child {
+    float: left;
+}
+
+.parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}

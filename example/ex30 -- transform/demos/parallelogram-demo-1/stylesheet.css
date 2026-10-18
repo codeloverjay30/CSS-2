@@ -1,0 +1,25 @@
+.skew-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #7a90d3;
+    transform: skew(-45deg);
+}
+
+div {
+    position: relative;
+    display: inline-block;
+    padding: .5em 2em;
+    margin: 2rem;
+    color: #c3fdf7;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+body{
+    text-align: center;
+}

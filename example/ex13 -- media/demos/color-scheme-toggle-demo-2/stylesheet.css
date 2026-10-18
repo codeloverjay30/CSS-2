@@ -1,0 +1,183 @@
+/*  -------- 預設 --------  */
+:root, .light-mode {
+	--gray-000:  #fff;
+	--gray-100:  #f9f9fd;
+	--gray-200:  #e8edf4;
+	--gray-300:  #DBE2E7;
+	--gray-400:  #CED7E0;
+	--gray-500:  #A9B3BD;
+	--gray-600:  #677889;
+	--gray-700:  #495562;
+	--gray-800:  #2D4155;
+	--gray-900:  #1A2632;
+	--gray-1000: #000;
+}
+
+/*  -------- 當使用者偏好深色模式 --------  */
+@media (prefers-color-scheme: dark) {
+	:root{
+		--gray-000:  #000;
+		--gray-100:  #1A2632;
+		--gray-200:  #2D4155;
+		--gray-300:  #495562;
+		--gray-400:  #677889;
+		--gray-500:  #A9B3BD;
+		--gray-600:  #CED7E0;
+		--gray-700:  #DBE2E7;
+		--gray-800:  #e8edf4;
+		--gray-900:  #f9f9fd;
+		--gray-1000: #fff;
+	}
+}
+.dark-mode{
+	--gray-000:  #000;
+	--gray-100:  #1A2632;
+	--gray-200:  #2D4155;
+	--gray-300:  #495562;
+	--gray-400:  #677889;
+	--gray-500:  #A9B3BD;
+	--gray-600:  #CED7E0;
+	--gray-700:  #DBE2E7;
+	--gray-800:  #e8edf4;
+	--gray-900:  #f9f9fd;
+	--gray-1000: #fff;
+}
+	
+
+/* basic style */
+
+:root {
+	--transition-base: .3s;
+}
+
+
+#color-scheme-toggle{
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 1rem 1.5rem;
+	color: var(--gray-700);
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid currentcolor;
+	border-radius: 2rem;
+	transition: var(--transition-base);
+	&:hover{
+		color: var(--gray-900);
+		background-color: var(--gray-200);
+	}
+	.material-icons, &:after{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+
+
+
+/* other style */
+
+* {
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 85%;
+}
+
+body{
+	padding: 1rem;
+	background: var(--gray-100);
+}
+
+.grid-container{
+	background: var(--gray-200);
+	&, textarea{
+		color: var(--gray-800);
+	}
+}
+
+header, main, textarea{
+	padding: 1rem;
+}
+
+header{
+	background: var(--gray-300);
+}
+
+main{
+	overflow: auto;
+}
+
+.msg{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 1.5rem;
+	& span {
+		font-size: 80%;
+		white-space: nowrap;
+		opacity: .5;
+	}
+	& p {
+		background: #67DC6F;
+		padding: .75rem 1rem;
+		margin: 0;
+		margin-left: .5rem;
+		color: #373737;
+		border-radius: 1.25rem;
+	}
+}
+
+footer{
+	display: flex;
+	border-top: 1px solid var(--gray-400);
+}
+
+textarea{
+	background: transparent;
+	flex-grow: 1;
+	resize: none;
+	margin-bottom: 1rem;
+	&, &:focus{
+		border: 0;
+		outline: 0;
+	}
+	&::placeholder{
+		color: var(--gray-500);
+	}
+}
+
+.resize{
+	position: relative;
+	resize: both;
+	overflow: auto;
+	width: 300px;
+	height: 500px;
+	border-radius: .5rem;
+	&:before, &:after{
+		position: absolute;
+	}
+	&:before{
+		content: "拉拉我👇";
+		right: .5rem;
+		bottom: 1rem;
+		color: var(--gray-500);
+	}
+	&:after{
+		content: "";
+		right: 0;
+		bottom: 0;
+		display: block;
+		border: 1rem solid;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #ff09;
+		border-bottom-color: #ff09;
+	}
+}
+
+.grid-container{
+	display: grid;
+	grid-template-rows: min-content auto min-content;
+	align-items: stretch;
+}

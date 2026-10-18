@@ -1,0 +1,22 @@
+.content{
+    /* 偽類、偽元素 */
+    &.active { ... }
+    &:hover { ... }
+    &:has(.btn-delete:hover) { ... }
+    &:before { ... }
+    
+    /* .content 和 .content 內的 p 使用一樣樣式 */
+    &, & p {
+        ...
+        span ｛ ... ｝
+    }
+}
+
+/* 等同於：
+.content.active { ... }
+.content:hover { ... }
+.content:has(.btn-delete:hover) { ... }
+.content:before { ... }
+.content, .content p { ... }
+.content, .content p span { ... }
+*/

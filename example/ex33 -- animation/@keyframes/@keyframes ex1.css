@@ -1,0 +1,17 @@
+/* 定義動畫關鍵幀 */
+@keyframes changeColor {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  
+  /* 套用動畫至元素 */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: changeColor 2s ease-in-out;
+  }

@@ -1,0 +1,4 @@
+.box {
+    transform-origin: top left; /* 將 transform 的基準點設置為左上角 */
+    transform: rotate(45deg);
+}

@@ -1,0 +1,14 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #faa;
+    transition: width 1s 1s,
+                height 1s;
+    &:hover {
+        background-color: #f66;
+        width: 300px;
+        height: 300px;
+        transition: width 1s,
+                    height 1s 1s;
+    }
+}

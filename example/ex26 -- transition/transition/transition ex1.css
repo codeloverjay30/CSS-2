@@ -1,0 +1,8 @@
+.element {
+    clip-path: circle(50%);
+    transition: clip-path 0.5s ease;
+}
+  
+.element:hover {
+    clip-path: circle(70%);
+}

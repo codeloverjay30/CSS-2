@@ -1,0 +1,5 @@
+.list *     { /* ... */} /* 選取 list 底下的所有東西 */
+nav   .item  { /* ... */}  /* 選取到 nav 下所有的 "item" class   (所有的小孩) */
+nav > .item  { /* ... */} /* 選取到 nav 下第一層的 "item" class (親生的小孩) */
+h1  + .list  { /* ... */} /* 選取 h1 後面第一個 "list" class */
+h1  ~ .list  { /* ... */} /* 選取 h1 後面所有的 "list" class */

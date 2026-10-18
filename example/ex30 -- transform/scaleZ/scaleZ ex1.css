@@ -1,0 +1,3 @@
+.box {
+    transform: scaleZ(1.5); /* 在 Z 軸方向放大 1.5 倍 */
+}

@@ -1,0 +1,60 @@
+.blur{
+    backdrop-filter: blur(5px);
+}
+.brightness{
+    backdrop-filter: brightness(125%);
+}
+.contrast{
+    backdrop-filter: contrast(200%);
+}
+.grayscale{
+    backdrop-filter: grayscale(1);
+}
+.hue-rotate{
+    backdrop-filter: hue-rotate(90deg);
+}
+.invert{
+    backdrop-filter: invert(1);
+    color: white;
+}
+.saturate{
+    backdrop-filter: saturate(200%);
+}
+.sepia{
+    backdrop-filter: sepia(1);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    border: 4px solid #fff;
+    height: 100px;
+    width: 200px;
+    border-radius: .5rem;
+}
+
+.box-row{
+    position: fixed;
+    top: 30%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.content{
+    background: linear-gradient(
+        #F1B6AE 33.33%,
+        #F2EAE7 0 66.66%,
+        #B2DBCD 0);
+    background-size: 100% 30px;
+    width: 100vw;
+    height: 300vh;
+}

@@ -1,0 +1,18 @@
+:root{
+    --gray-600: #666;
+    --color-default: var(--gray-600);
+}
+body{
+    color: var(--color-default);
+}
+body article{
+    
+    /** 
+        overriding the value of `--color-default`, 
+        thus, we don't have to write `color: var(--color-default)` again.;
+    */
+    --color-default: #333;
+    
+    /* 這一行無效，沒有辦法覆蓋變數套用的變數 */
+    --gray-600: #555;
+}

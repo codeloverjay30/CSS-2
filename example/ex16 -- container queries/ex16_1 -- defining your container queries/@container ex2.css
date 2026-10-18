@@ -1,0 +1,4 @@
+.post {
+    /* container: <container-name> / <container-type>; */
+       container: sidebar / inline-size;
+}

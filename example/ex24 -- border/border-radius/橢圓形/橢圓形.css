@@ -1,0 +1,7 @@
+.oval{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    /* 等同於： */
+    /* border-radius: 100px / 50px; */
+}

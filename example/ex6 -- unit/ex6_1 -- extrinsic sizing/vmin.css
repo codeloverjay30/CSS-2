@@ -1,0 +1,3 @@
+header {
+    padding: 10vmin 1rem; /* Relative to 1% of viewport's* smaller dimension, it's the min of current vh and vw */
+}

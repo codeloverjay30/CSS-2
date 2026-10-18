@@ -1,0 +1,148 @@
+/* Relative Article */
+/* https://ithelp.ithome.com.tw/articles/10339693 */
+/* https://im1010ioio.hashnode.dev/css-white-space-word-breakline-clamp */
+
+.info-text-content{
+	overflow: hidden;
+}
+
+h1, small{
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+small{
+	display: inline-block;
+}
+
+
+/* other style */
+:root{
+	--theme-color: 75, 143, 245;
+	--body-color: #283057;
+	--avatar-size: 100px;
+	--card-padding-base: 2rem;
+}
+
+.container{
+    container: profile-card / inline-size;
+}
+
+.card{
+	padding: var(--card-padding-base);
+	color: var(--body-color);
+	border-radius: 1rem;
+	background: #fff;
+	box-shadow: 0 10cqw 20cqw rgba(86,111,140,.1);
+}
+
+.info-content{
+	display: flex;
+	align-items: center;
+}
+
+p{
+	margin-bottom: 0;
+}
+
+h1{
+	margin-block-end: .2rem;
+	font-size: clamp(1.25rem, 6cqw , 2rem);
+}
+
+small{
+	opacity: .6;
+	font-size: clamp(.85rem, 3cqw , 1rem);
+}
+
+.social-content{
+	--padding: min(1.8cqw, .7rem);
+	display: flex;
+	gap: var(--padding);
+	& a{
+		display: block;
+		width: fit-content;
+		padding: 0.5rem;
+		margin-block-start: var(--padding);
+		font-size: .5rem;
+		line-height: 0;
+		font-size: 50%;
+		text-decoration: none;
+		color: rgb(var(--theme-color));
+		border: 1px solid currentcolor;
+		border-radius: 50%;
+		transition: .3s;
+		&:hover{
+			background: rgba(var(--theme-color), .1);
+		}
+	}
+}
+
+.user-avatar{
+	inline-size: var(--avatar-size);
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	margin-inline-end: 1rem;
+}
+
+@container profile-card (width < 300px) {
+	.card{
+		padding: calc(var(--card-padding-base) / 2);
+	}
+	.user-avatar{
+		inline-size: calc(var(--avatar-size) / 2);
+	}
+	.social-content{
+		display: none;
+	}
+}
+
+@container profile-card (width > 400px) {
+	.info-content{
+		flex-direction: column;
+		text-align: center;
+	}
+	.social-content{
+		justify-content: center;
+	}
+}
+
+
+*{ box-sizing: border-box; }
+
+body{
+	background: #f5f5f5;
+}
+
+.resize{
+	position: relative;
+	resize: horizontal;
+	overflow: auto;
+	width: 500px;
+	min-width: 360px;
+	margin: auto;
+	margin-top: 5rem;
+	padding: 5rem;
+	&:before, &:after{
+		position: absolute;
+	}
+	&:before{
+		content: "拉拉我👇";
+		right: .5rem;
+		bottom: 1rem;
+		color: #aaa;
+	}
+	&:after{
+		content: "";
+		right: 0;
+		bottom: 0;
+		display: block;
+		border: 1rem solid;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #ff09;
+		border-bottom-color: #ff09;
+	}
+}

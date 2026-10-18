@@ -1,0 +1,5 @@
+/* When device is screen AND min width is larger than or equal to 992px. */
+@media screen and (min-width: 992px) { /* ... */ }
+
+/* When device is screen AND width is larger than or equal to 992px */
+@media screen and (width >= 992px)  { /* ... */ }

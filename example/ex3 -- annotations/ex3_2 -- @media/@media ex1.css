@@ -1,0 +1,5 @@
+/* When device is screen AND its max width is less than or equal to 767px. */
+@media screen and (max-width: 767px) { /* ... */ }
+
+/* When device is screen AND its width is less than 768px. */
+@media screen and (width < 768px) { /* ... */ }

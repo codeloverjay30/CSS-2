@@ -1,0 +1,10 @@
+
+input.form-control::placeholder{
+    color: Gainsboro;
+    font-weight: bold;
+}
+
+
+body{
+    padding: 3rem;
+}

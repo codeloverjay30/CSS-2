@@ -1,0 +1,25 @@
+p {
+    background-color: white;
+
+    /* 只有當 p 在 .content 內的時候，p 的背景色才會是黃色 */
+    .content & { 
+        background-color: yellow;
+    }
+
+    /* 只有當 p 在 article 內且 id 是 #post-00 的時候，p 的背景色才會是藍色 */
+    article#post-00 & { 
+        background-color: blue;
+    }
+}
+
+/*以往要達到這個效果，必須要這樣寫：
+p {
+    background-color: white;
+}
+.content p {
+    background-color: yellow;
+}
+article#post-00 p { 
+    background-color: blue;
+}
+但這樣，關於 p 的設定就會散落在多個地方。 */

@@ -1,0 +1,14 @@
+:root{
+    --gray-100: #f9f9fd;
+    --gray-200: #e8edf4;
+    --gray-300: #DBE2E7;
+    --gray-400: #CED7E0;
+    --gray-500: #A9B3BD;
+    --gray-600: #677889;
+    --gray-700: #495562;
+    --gray-800: #2D4155;
+    --gray-900: #1A2632;
+
+    /* okay, can be accessed */
+    --color-default: var(--gray-700);
+}

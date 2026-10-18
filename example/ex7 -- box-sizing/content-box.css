@@ -1,0 +1,10 @@
+*, *::before, *::after{
+    box-sizing: content-box;
+}
+
+.card {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 10px;
+}

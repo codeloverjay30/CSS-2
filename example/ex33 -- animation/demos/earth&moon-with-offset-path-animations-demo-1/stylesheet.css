@@ -1,0 +1,62 @@
+@keyframes move {
+    to {
+        offset-distance: -100%;
+    }
+}
+@keyframes moon {
+    0% { content: "🌑" }
+    14% { content: "🌒" }
+    28% { content: "🌓" }
+    43% { content: "🌔" }
+    57% { content: "🌕" }
+    71.4% { content: "🌖" }
+    85.7% { content: "🌗" }
+    100% { content: "🌘" }
+}
+@keyframes earth {
+    0% { content: "🌎"; opacity: 0.5 }
+    50% { content: "🌍"; opacity: 0.75 }
+    100% { content: "🌏"; opacity: 1 }
+}
+
+:root{
+    --size-moon: 2rem;
+}
+
+div{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--size-moon)*4 + var(--size-moon)*4);
+    aspect-ratio: 1 / 1;
+/*     background: #eee; */
+    margin: 1rem;
+    color: #aaa;
+    font-size: calc(var(--size-moon)*4);
+    &::before{
+        position: absolute;
+        content: "🌖";
+        display: inline-block;
+        font-size: var(--size-moon);
+        animation: move 28s linear infinite,
+                   moon 28s linear infinite;
+        offset-path: circle();
+    }
+    &::after{
+        content: "🌎";
+        animation: earth 1s linear infinite;
+        transform: rotate(23.5deg);
+    }
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}

@@ -1,0 +1,8 @@
+.content{
+    p { ... }           /* .content p */
+    .child { ... }      /* .content .child */
+    > .child { ... }    /* .content > .child */
+    + .content { ... }  /* .content + .content */
+    ~ .content { ... }  /* .content ~ .content */
+    @media(max-width: 768px) { ... }
+}

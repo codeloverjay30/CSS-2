@@ -1,0 +1,20 @@
+/* lowest priority -- 1 */
+* { color: yellow; }
+
+/* priority -- 2 */
+div { color: yellow; }
+
+p { color: yellow; }
+
+/* priority -- 3 */
+.text  { color: yellow; }
+
+/* priority -- 4 */
+#main-text { color: blue; }
+
+/* priority -- 5 */
+/* <p id="main-text" class="text text-center" style="color: orange;"> ... </p> */
+
+/* priority -- 6 */
+p { color: red !important; } /* 最後 p 的顏色會是紅色  */
+

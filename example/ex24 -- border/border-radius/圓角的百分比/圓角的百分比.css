@@ -1,0 +1,6 @@
+/*
+    `border-radius` 也可以用百分比來設定
+*/
+div {
+    border-radius: 50%;
+}

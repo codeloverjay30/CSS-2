@@ -1,0 +1,62 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Color scheme toggle demo 2</title>
+        <link rel="stylesheet" href="./stylesheet.css"></style>
+    </head>
+    <body>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script>
+            // https://stackoverflow.com/questions/56393880/how-do-i-detect-dark-mode-using-javascript
+            const body = document.body;
+            const iconString = ["light_mode", "dark_mode"];
+            const themesText = ["Dark","Light"];
+            let currentThemeIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            function toggleColorMode() {
+                currentThemeIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+                if(){
+                    body.classList.toggle("light-mode");
+                } else {
+                    body.classList.toggle("dark-mode");
+                }
+            }
+        </script>
+        <div class="grid-container resize">
+            <header>User Name</header>
+            <main>
+                <div class="msg">
+                    <span>上午 12:52</span>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="msg">
+                    <span>上午 12:52</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum doloremque tempora molestias repellat, ad unde reprehenderit, sint cumque libero quam similique reiciendis aperiam id aliquam, tempore earum nemo sequi recusandae.</p>
+                </div>
+                <div class="msg">
+                    <span>上午 12:52</span>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="msg">
+                    <span>上午 12:52</span>
+                    <p>Lorem </p>
+                </div>
+                <div class="msg">
+                    <span>上午 12:52</span>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="msg">
+                    <span>上午 12:52</span>
+                    <p>Lorem </p>
+                </div>
+            </main>
+            <footer>
+                <textarea placeholder="輸入訊息"></textarea>
+            </footer>
+            <button id="color-scheme-toggle" onclick="toggleColorMode()">
+                <span id="toggle-icon" class="material-icons">dark_mode</span>
+                <span id="toggle-text">{{ currentThemeIsDark ? themesText[0] : themesText[1] }}</span>
+            </button>
+        </div>
+    </body>
+</html>

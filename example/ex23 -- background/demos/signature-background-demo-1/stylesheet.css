@@ -1,0 +1,23 @@
+/* Relative Article:
+https://im1010ioio.hashnode.dev/multiple-backgrounds
+*/
+
+.card{
+    width: 50vh;
+    height: 50vh;
+    padding: 1rem 2rem;
+    color: #724E4E;
+    background: #FFF9ED url(https://im1010ioio.github.io/super-easy-css/38/signature.svg) no-repeat  bottom right;
+	background-origin: content-box;
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: .25rem;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #645656;
+}

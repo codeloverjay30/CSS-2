@@ -1,0 +1,3 @@
+div {
+    width: clamp(20px, 20vw, 400px);
+}

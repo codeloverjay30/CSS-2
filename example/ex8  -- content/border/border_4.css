@@ -1,0 +1,19 @@
+.card {
+    /* abbreviation of `width` is same of abbreviation of `padding` */
+    
+    /* width, style, color */
+    /* top bottom left right */
+    border: 2px solid blue;
+
+    /* width, style, color */
+    /* top bottom, left right */
+    border: 2px, 5px solid blue;
+
+    /* width, style, color */
+    /* top, left right, bottom */
+    border: 2px,5px,6px solid blue;
+
+    /* width, style, color */
+    /* top, right, bottom, left */
+    border: 2px,5px,6px,7px solid blue;
+}   

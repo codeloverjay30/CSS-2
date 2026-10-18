@@ -1,0 +1,9 @@
+a:link          { /* ... */ } /* when the link is unvisited */
+a:visited      { /* ... */ }  /* when the link is visited */
+a:hover        { /* ... */ }  /* when the mouse hovers */
+a:active        { /* ... */ }  /* when the link is in active. From mouse hover to click the link */
+a:focus         { /* ... */ }  /* when the link is focus */
+
+a:focus-within  { /* ... */ }  /* when one of children of the link is focus */
+a:focus-visible { /* ... */ }  /* when the linke are focused by keyboard hover and mouse hover （except that node with input, textarea tag ) */
+div:target      { /* ... */ }  /* when id of node are same to the hash id of url of the node */

@@ -1,0 +1,5 @@
+/* When the device is screen AND it does support hover behavior */
+@media screen and (hover: hover) { /* ... */ }
+
+/* When the device is screen AND it does NOT support hover behavior */
+@media screen and (hover: none){ /* ... */ }

@@ -1,0 +1,2 @@
+/* When device is NOT screen AND is in print preview mode */
+@media not screen and print { /* ... */ }

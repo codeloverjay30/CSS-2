@@ -1,0 +1,51 @@
+.cookie{
+    color: #fbe2cf;
+    background: #92695C;
+    border-image: url('https://im1010ioio.github.io/super-easy-css/44/border-image.png') 50 / 30px / 30px repeat;
+    margin: 30px;
+}
+
+.round{
+    border-image-repeat: round;
+}
+.space{
+    border-image-repeat: space;
+}
+
+.resize{
+	position: relative;
+	resize: horizontal;
+	overflow: auto;
+	width: 280px;
+	min-width: 100px;
+	height: 180px;
+	min-height: 100px;
+	padding: 1rem;
+	&:before, &:after{
+		position: absolute;
+	}
+	&:before{
+		content: "拉拉我👇";
+		right: .5rem;
+		bottom: 1rem;
+		color: #fff;
+	}
+	&:after{
+		content: "";
+		right: 0;
+		bottom: 0;
+		display: block;
+		border: 1rem solid;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #ff09;
+		border-bottom-color: #ff09;
+	}
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+}

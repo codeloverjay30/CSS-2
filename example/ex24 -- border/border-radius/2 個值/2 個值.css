@@ -1,0 +1,6 @@
+/*
+    `border-radius` 也支援使用兩個值，分別指的是「左上+右下」和「左下+右上」的圓角
+*/
+div {
+    border-radius: 50px 25px;
+}

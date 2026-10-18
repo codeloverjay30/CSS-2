@@ -1,0 +1,102 @@
+.grid-container{
+	display: grid;
+	grid-template-rows: min-content auto min-content;
+	align-items: stretch;
+}
+
+/* other style */
+* {
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 85%;
+}
+
+body{
+	padding: 1rem;
+}
+
+.grid-container{
+	background: #2D2E30;
+	&, textarea{
+		color: #DFDFDF;
+	}
+}
+
+header, main, textarea{
+	padding: 1rem;
+}
+
+header{
+	background: rgba(255, 255, 255, .1);
+}
+
+main{
+	overflow: auto;
+}
+
+.msg{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 1.5rem;
+	& span {
+		font-size: 80%;
+		white-space: nowrap;
+		opacity: .5;
+	}
+	& p {
+		background: #67DC6F;
+		padding: .75rem 1rem;
+		margin: 0;
+		margin-left: .5rem;
+		color: #373737;
+		border-radius: 1.25rem;
+	}
+}
+
+footer{
+	display: flex;
+	border-top: 1px solid #38393B;
+}
+
+textarea{
+	background: transparent;
+	flex-grow: 1;
+	resize: none;
+	margin-bottom: 1rem;
+	&, &:focus{
+		border: 0;
+		outline: 0;
+	}
+}
+
+.resize{
+	position: relative;
+	resize: both;
+	overflow: auto;
+	width: 300px;
+	height: 500px;
+	border-radius: .5rem;
+	&:before, &:after{
+		position: absolute;
+	}
+	&:before{
+		content: "拉拉我👇";
+		right: .5rem;
+		bottom: 1rem;
+		color: #aaa;
+	}
+	&:after{
+		content: "";
+		right: 0;
+		bottom: 0;
+		display: block;
+		border: 1rem solid;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #ff09;
+		border-bottom-color: #ff09;
+	}
+}

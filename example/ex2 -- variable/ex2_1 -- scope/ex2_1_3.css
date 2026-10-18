@@ -1,0 +1,8 @@
+:root{
+    --color-default: #666;
+}
+
+body{
+    /* okay, can be accessed */
+    color: var(--color-default);
+}

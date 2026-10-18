@@ -1,0 +1,5 @@
+.half-oval{
+    width: 200px;
+    height: 100px;
+    border-radius: 50% / 100% 100% 0% 0%;
+}

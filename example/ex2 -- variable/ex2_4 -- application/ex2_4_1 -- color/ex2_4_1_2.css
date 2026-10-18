@@ -1,0 +1,17 @@
+:root{
+    --color-r: 46;
+    --color-g: 65;
+    --color-b: 140;
+    --color-primary-rgb: var(--color-r), var(--color-g), var(--color-b);
+}
+
+p.text-sub{
+    color: rgba(var(--color-primary-rgb), .8);
+}
+
+p.text-change-rgb{
+    color: rgba(
+		calc(var(--color-r) * 3),
+		calc(var(--color-g) / 2),
+		calc(var(--color-g) + 100), .8);
+}

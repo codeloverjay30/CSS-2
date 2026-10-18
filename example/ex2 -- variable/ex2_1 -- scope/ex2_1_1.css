@@ -1,0 +1,13 @@
+header {
+    --color-header: #888;
+    /* okay, can be accessed */
+    color: var(--color-header);
+}
+header p {
+    /* okay, can be accessed */
+    color: var(--color-header);
+}
+footer {
+    /* NOT okay, can NOT be accessed, the color will NOT affected since `--color-header` can NOT be accessed. */
+    color: var(--color-header);
+}

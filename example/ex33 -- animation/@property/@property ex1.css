@@ -1,0 +1,13 @@
+@property --color-start {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: rgba(255,182,193,1);
+}
+
+body{
+    background: linear-gradient(in oklch, var(--color-start), rgba(104,133,244,1));
+    transition: 1s --color-start;
+    &:hover{
+        --color-start: rgba(75,188,213,1);
+    }
+}

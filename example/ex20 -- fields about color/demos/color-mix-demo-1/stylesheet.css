@@ -1,0 +1,78 @@
+/* Relative Article */
+/* https://ithelp.ithome.com.tw/articles/10340648 */
+/* https://im1010ioio.hashnode.dev/css-currentcolor-accent-color-color-mix */
+
+:root{
+	--primary: #647AF1;
+	
+	--primary-light-90: color-mix(in srgb, var(--primary) 90%, white);
+	--primary-light-80: color-mix(in srgb, var(--primary) 80%, white);
+	--primary-light-70: color-mix(in srgb, var(--primary) 70%, white);
+	--primary-light-60: color-mix(in srgb, var(--primary) 60%, white);
+	--primary-light-50: color-mix(in srgb, var(--primary) 50%, white);
+	--primary-light-40: color-mix(in srgb, var(--primary) 40%, white);
+	--primary-light-30: color-mix(in srgb, var(--primary) 30%, white);
+	--primary-light-20: color-mix(in srgb, var(--primary) 20%, white);
+	--primary-light-10: color-mix(in srgb, var(--primary) 10%, white);
+	
+	--primary-dark-90: color-mix(in srgb, var(--primary) 90%, black);
+	--primary-dark-80: color-mix(in srgb, var(--primary) 80%, black);
+	--primary-dark-70: color-mix(in srgb, var(--primary) 70%, black);
+	--primary-dark-60: color-mix(in srgb, var(--primary) 60%, black);
+	--primary-dark-50: color-mix(in srgb, var(--primary) 50%, black);
+	--primary-dark-40: color-mix(in srgb, var(--primary) 40%, black);
+	--primary-dark-30: color-mix(in srgb, var(--primary) 30%, black);
+	--primary-dark-20: color-mix(in srgb, var(--primary) 20%, black);
+	--primary-dark-10: color-mix(in srgb, var(--primary) 10%, black);
+}
+
+.content-light .color{
+	background-color: var(--primary);
+	&:nth-child(2){ background-color: var(--primary-light-90); }
+	&:nth-child(3){ background-color: var(--primary-light-80); }
+	&:nth-child(4){ background-color: var(--primary-light-70); }
+	&:nth-child(5){ background-color: var(--primary-light-60); }
+	&:nth-child(6){ background-color: var(--primary-light-50); }
+	&:nth-child(7){ background-color: var(--primary-light-40); }
+	&:nth-child(8){ background-color: var(--primary-light-30); }
+	&:nth-child(9){ background-color: var(--primary-light-20); }
+	&:nth-child(10){ background-color: var(--primary-light-10); }
+}
+
+.content-dark .color{
+	background-color: var(--primary);
+	&:nth-child(2){ background-color: var(--primary-dark-90); }
+	&:nth-child(3){ background-color: var(--primary-dark-80); }
+	&:nth-child(4){ background-color: var(--primary-dark-70); }
+	&:nth-child(5){ background-color: var(--primary-dark-60); }
+	&:nth-child(6){ background-color: var(--primary-dark-50); }
+	&:nth-child(7){ background-color: var(--primary-dark-40); }
+	&:nth-child(8){ background-color: var(--primary-dark-30); }
+	&:nth-child(9){ background-color: var(--primary-dark-20); }
+	&:nth-child(10){ background-color: var(--primary-dark-10); }
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	height: 50dvh;
+	gap: 4vw;
+}
+
+.content-dark{
+	background: #000;
+}
+
+.color{
+	width: 50px;
+	height: 50px;
+	border-radius: 4px;
+}

@@ -1,0 +1,7 @@
+html {
+    font-size: 90%;
+}
+
+p {
+    font-size: 1rem; /* 16px * 90% = 14.4px */
+}

@@ -1,0 +1,68 @@
+.mask-gradient{
+    mask: linear-gradient(90deg, transparent, #000);
+}
+
+.mask-gradient-2{
+    mask:
+        linear-gradient(135deg, transparent 30px, #fff 0)
+        top left,
+        linear-gradient(-135deg, transparent 30px, #fff 0)
+        top right,
+        linear-gradient(-45deg, transparent 30px, #fff 0)
+        bottom right,
+        linear-gradient(45deg, transparent 30px, #fff 0)
+        bottom left;
+    mask-size: 50% 50%;
+    mask-repeat: no-repeat;
+}
+
+.mask-img-1{
+    mask: url(https://im1010ioio.github.io/super-easy-css/45/mask-1.png);
+    mask-size: cover;
+}
+
+.mask-img-2{
+    mask: url(https://im1010ioio.github.io/super-easy-css/45/mask-2.png);
+    mask-size: cover;
+}
+
+.mask-img-4{
+    mask:
+        url(https://im1010ioio.github.io/super-easy-css/45/handprint-1.png),
+        url(https://im1010ioio.github.io/super-easy-css/45/handprint-2.png),
+        url(https://im1010ioio.github.io/super-easy-css/45/handprint-3.png),
+        url(https://im1010ioio.github.io/super-easy-css/45/handprint-4.png),
+        url(https://im1010ioio.github.io/super-easy-css/45/handprint-5.png);
+    mask-size: 30%;
+    mask-position: 0 0, 50% 20%, 10% 80%, 90% 90%, 100% 0;
+    mask-repeat: no-repeat;
+    margin: 0 50%;
+}
+
+/* image from: https://www.freepik.com/free-vector/ink-paint-black-brush-stroke-splatter-set-design_207422852.htm --> */
+.mask-img-3{
+    mask: url(https://im1010ioio.github.io/super-easy-css/45/mask-3.png);
+    mask-position: 50% 50%;
+    mask-size: contain;
+    mask-mode: luminance;
+    mask-repeat: no-repeat;
+}
+
+.photo{
+    border: 10px solid #fff;
+}
+
+img{
+    width: calc(50% - 3rem);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #3f372f;
+    gap: 4rem 2rem;
+    padding: 5rem;
+    box-sizing: border-box;
+}

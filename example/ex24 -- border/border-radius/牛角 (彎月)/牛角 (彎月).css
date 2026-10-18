@@ -1,0 +1,6 @@
+.horn{
+    height: 300px;
+    width: 200px;
+    border-right: 150px solid #FADC04;
+    border-radius:0 0 100% 0;
+}

@@ -1,0 +1,18 @@
+.semi-dark {
+    /* 背景色為黑色的 0.2 透明度 */
+    background-color: rgba(0,0,0, .2);
+
+    /* 如果 .semi-dark 在 .semi-dark 中，背景色為透明 */
+    & & {
+        background-color: transparent;
+    }
+}
+
+/* 以往要達到這個效果，要這樣寫：
+.semi-dark {
+    background-color: rgba(0,0,0, .2);
+    .semi-dark {
+        background-color: transparent;
+    }
+}
+不過這只是簡寫，所以看個人喜好囉！ */

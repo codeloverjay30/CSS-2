@@ -1,0 +1,641 @@
+/*Background----------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    background-image: 
+    radial-gradient(#555 0%, #000 100%);
+    -webkit-radial-gradient(#555 0%, #000 100%);
+    -o-radial-gradient(#555 0%, #000 100%);
+    -moz-radial-gradient(#555 0%, #000 100%);
+  }
+  
+  .shadow {
+    width: 500px;
+    height: 0px;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    left: 335px;
+    top: 430px;
+    transform: skew(-35deg, 0);
+    box-shadow: 10px 10px 70px 15px rgba(0, 0, 0, 0.5);
+  }
+  /*cube--------------*/
+  
+  .space3d {
+    width: 1200px;
+    height: 700px;
+    /*border: 1px solid #f00;*/
+    
+    margin: auto;
+    bottom: 50%;
+    position: relative;
+    perspective: 900px;
+    perspective-origin: 100% 10%;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: rotateX(-180deg) rotateY(0deg) translateZ(0px);
+    }
+    100% {
+      transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+    }
+  }
+  
+  .c {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -420px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s .5s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .c div {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .c:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .a {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -280px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s .7s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .a div {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .a:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .r {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -140px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s .9s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .r div {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .r:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .t {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s 1.1s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .t div {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .t:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .o1 {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 140px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s 1.3s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .o1 div {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    
+    border-radius: 5px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .o1:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .o2 {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 280px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s 1.5s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .o2 div {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .o2:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .n {
+    width: 70px;
+    height: 70px;
+    /*border: 1px solid #F6DD08;*/
+    
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 420px;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+    animation: move .8s 1.7s cubic-bezier(.61, .17, .22, 1) backwards;
+  }
+  
+  .n div {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .n:hover {
+    transform: rotateX(-540deg) rotateY(0deg) rotateZ(0deg);
+    transition: 1.5s cubic-bezier(1, -0.49, 0, 1.66);
+  }
+  
+  .c .front {
+    transform: translateZ(35px);
+    width: 67px;
+    height: 67px;
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) 0px 0 no-repeat;
+    border: 2px solid #000;
+  }
+  
+  .c .front2 {
+    transform: translateZ(32px);
+    background: #fff;
+  }
+  
+  .c .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) 0px 0 no-repeat;
+  }
+  
+  .c .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .c .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .c .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .c .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .a .front {
+    transform: translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) -70px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .a .front2 {
+    transform: translateZ(32px);
+    background: #000;
+  }
+  
+  .a .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) -70px 0 no-repeat;
+    width: 67px;
+    height: 67px;
+    border: 2px solid #000;
+  }
+  
+  .a .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .a .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .a .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .a .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .r .front {
+    transform: translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) -140px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .r .front2 {
+    transform: translateZ(32px);
+    background: #fff;
+  }
+  
+  .r .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) -140px 0 no-repeat;
+  }
+  
+  .r .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .r .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .r .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .r .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .t .front {
+    transform: translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) -210px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .t .front2 {
+    transform: translateZ(32px);
+    background: #000;
+  }
+  
+  .t .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) -210px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .t .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .t .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .t .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .t .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .o1 .front {
+    transform: translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) -280px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .o1 .front2 {
+    transform: translateZ(32px);
+    background: #fff;
+  }
+  
+  .o1 .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) -280px 0 no-repeat;
+  }
+  
+  .o1 .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .o1 .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .o1 .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .o1 .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .o2 .front {
+    transform: translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) -350px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .o2 .front2 {
+    transform: translateZ(33px);
+    background: #000;
+  }
+  
+  .o2 .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) -350px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .o2 .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .o2 .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .o2 .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .o2 .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #000;
+  }
+  
+  .n .front {
+    transform: translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-1540321184.jpg) -420px 0 no-repeat;
+    border: 2px solid #000;
+    width: 67px;
+    height: 67px;
+  }
+  
+  .n .front2 {
+    transform: translateZ(33px);
+    background: #fff;
+  }
+  
+  .n .back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(35px);
+    background: url(https://pic.pimg.tw/miki87120/1448360284-248766361.jpg) -420px 0 no-repeat;
+  }
+  
+  .n .up {
+    transform: rotateX(90deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .n .down {
+    transform: rotateX(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .n .left {
+    transform: rotateY(270deg) translateZ(35px);
+    background: #fff;
+  }
+  
+  .n .right {
+    transform: rotateY(90deg) translateZ(35px);
+    background: #fff;
+  }
+  /*menu-----------------*/
+  
+  .menu ul {
+    background: #000;
+    margin: 5px;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: arial;
+    position: absolute;
+    border-radius: 10px;
+    top: 64px;
+    width: 70px;
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: all .25s .1s ease-out;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+  }
+  
+  .a:hover ul {
+    transform: scaleY(1);
+    transition: all .25s 1.5s ease-out;
+  }
+  
+  .a ul li {
+    padding: 5px;
+  }
+  
+  .a ul li:hover {
+    transition: .2s;
+    background: #555;
+    border-radius: 10px;
+  }
+  
+  .r:hover ul {
+    transform: scaleY(1);
+    transition: all .25s 1.5s ease-out;
+  }
+  
+  .r ul li {
+    padding: 5px;
+  }
+  
+  .r ul li:hover {
+    transition: .2s;
+    background: #555;
+    border-radius: 10px;
+  }

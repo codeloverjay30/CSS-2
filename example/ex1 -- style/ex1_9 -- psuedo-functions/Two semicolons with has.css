@@ -1,0 +1,5 @@
+/**
+    Inside nodes with `tr` tag, when there exists one or more node(s) whose class is set to `btn-delete` and is hover, 
+    the children node with `td` node will set to `...`. 
+*/
+tr:has(.btn-delete:hover) > td { /* ... */ }

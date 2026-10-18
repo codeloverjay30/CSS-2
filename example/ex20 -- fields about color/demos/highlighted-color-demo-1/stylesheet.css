@@ -1,0 +1,13 @@
+::selection {
+    color: Cornsilk;
+    background-color: Crimson;
+}
+  
+p::selection {
+    color: white;
+    background-color: CornflowerBlue;
+}
+  
+body{
+      padding: 5rem;
+}

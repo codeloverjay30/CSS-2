@@ -1,0 +1,7 @@
+:root{ /* :root specifies the root node of the web page. */
+    --color-default: #666; /* declare a field `--color-default` with value `#666` (which is gray)*/
+}
+
+body{
+    color: var(--color-default); /* use the value of `--color-default` field */
+}

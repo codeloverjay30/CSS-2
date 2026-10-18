@@ -1,0 +1,74 @@
+div{
+    margin: 2rem auto;
+}
+
+.box{
+    width: 60px;
+    height: 60px;
+    border-top: 20px solid #F28095;
+    border-left: 20px solid #99F2C8;
+    border-right: 20px solid #FDD478;
+    border-bottom: 20px solid #7ABFDE;
+}
+
+.tri{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid #F28095;
+    border-left: 50px solid #99F2C8;
+    border-right: 50px solid #FDD478;
+    border-bottom: 50px solid #7ABFDE;
+}
+
+.tri{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid #F28095;
+    border-left: 50px solid #99F2C8;
+    border-right: 50px solid #FDD478;
+    border-bottom: 50px solid #7ABFDE;
+}
+
+.tri1{
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #328fa8;
+ }
+
+.tri2{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid #328fa8;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+ }
+
+ .tri3{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid #328fa8;
+    border-right: 50px solid transparent;
+ }
+
+ .tri4{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid #328fa8;
+    border-left: 50px solid transparent;
+ }
+
+ .tri5{
+    height: 0px;
+    width: 0px;
+    border-bottom: 50px solid #328fa8;
+    border-right: 50px solid transparent;
+ }
+
+ .tri6{
+    height: 0px;
+    width: 0px;
+    border-bottom: 50px solid #328fa8;
+    border-left: 50px solid transparent;
+ }

@@ -1,0 +1,4 @@
+.scene {
+    perspective: 1000px;
+    perspective-origin: left top; /* 從場景的左上角觀看 3D 場景 */
+}

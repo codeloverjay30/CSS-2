@@ -1,0 +1,8 @@
+/**
+    For orientation, see my notes [Media orientation.md](.../example/ex13 -- media/Media orientation.md)
+*/
+/* When the orientation is landscape */
+@media screen and (orientation: landscape) { /* ... */ }
+
+/* When the orientation is portrait */
+@media screen and (orientation: portrait) { /* ... */ }

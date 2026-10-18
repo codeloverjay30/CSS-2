@@ -1,0 +1,17 @@
+:root {
+    /* --bg-default: #cae3ff; */
+}
+.header {
+    /* 
+        + case 1:
+        
+            If `--bg-default` is declared and can be accessed, 
+        
+        then use `--bg-default`
+
+        + case 2:
+        
+            Otherwise, use the default value -- `white`.
+
+    background-color: var(--bg-default, white); 
+}

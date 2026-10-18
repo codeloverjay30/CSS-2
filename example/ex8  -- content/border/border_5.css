@@ -1,0 +1,4 @@
+.card {
+    border-radius: 0.5; /* will set to circle */
+    overflow: hidden; /* needed if there is an icon or image in the `.card` instead of simply color. */
+}

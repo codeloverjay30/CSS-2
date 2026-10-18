@@ -1,0 +1,69 @@
+.blur img{
+    filter: blur(5px);
+}
+.brightness img{
+    filter: brightness(200%);
+}
+.contrast img{
+    filter: contrast(200%);
+}
+.grayscale img{
+    filter: grayscale(1);
+}
+.hue-rotate img{
+    filter: hue-rotate(90deg);
+}
+.invert img{
+    filter: invert(1);
+}
+.opacity img{
+    filter: opacity(50%);
+    /* 等同於 */
+    /* opacity: 0.5; */
+}
+.saturate img{
+    filter: saturate(200%);
+}
+.sepia img{
+    filter: sepia(1);
+}
+
+.drop-shadow img{
+    filter: drop-shadow(8px 8px 10px blue);
+    width: 80%;
+    margin: auto
+}
+
+
+div{
+    position: relative;
+    width: 200px;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    img {
+        display: block;
+        width: 100%;
+    }
+    span{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+        background: rgba(0,0,0, .6);
+        text-align: center;
+        padding: 0.4rem 0;
+        z-index: 2;
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+    font-family: sans-serif;
+    background: #4d5365;
+}

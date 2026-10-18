@@ -1,0 +1,7 @@
+.child {
+    float: left;
+}
+
+.parent {
+    display: flow-root;
+}
